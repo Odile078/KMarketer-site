@@ -1,30 +1,8 @@
-body{
-    font-family: 'Montserrat', sans-serif;
+.body{
     margin: 0;
 }
-ul{
-    list-style: none;
-    padding-inline-start: 0;
-    margin-block-end: 0;
-    margin-block-start: 0;
-}
-a{
-    text-decoration: none;
-}
-h1,h2,h3,h4,h5,p{
-    margin: 0;
-    padding: 0;
-}
-button{
-    border-width: 0;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-}
-div{
-    margin: 0;
-    padding: 0;}
+
+
 .header{
     background: #f6f6f6;
     padding: 1rem;
@@ -38,6 +16,8 @@ div{
     font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: 0.1px;
+    margin: 0;
+    padding: 0;
     
 }
 .logo--primary{
@@ -55,6 +35,10 @@ div{
     position: absolute;
 }
 .nav__list{
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,6 +58,7 @@ div{
     text-align: center;
     letter-spacing: 0.2px;
     color: #737373;
+    text-decoration: none;
 }
 .nav__link:hover, .nav__link:active{
     color: rgb(56, 54, 54);
@@ -83,10 +68,15 @@ div{
     align-items: center;
     gap:0.5rem
 }
-/* .icon-list__item{
+.icon-list__item{
     width: 1rem;
     height: 1rem;
-} */
+    border-width: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
 .icon-list__item .icon-list__icon{
     color: #737373;
     width: 0.9rem;
@@ -133,9 +123,10 @@ div{
 .title{
     font-style: normal;
     font-weight: 800;
-    /* text-align: center; */
     letter-spacing: 0.2px;
     color: #252B42;
+    margin: 0;
+    padding: 0;
 } 
 .title--size-large{
     font-size: 2.5rem;
@@ -160,9 +151,9 @@ div{
 .headline{
     font-style: normal;
     font-weight: 500;
-    /* text-align: center; */
     letter-spacing: 0.2px;
-    color: #737373;
+    margin: 0;
+    padding: 0;
 }
 .headline--size-large{
     font-size: 1.25rem;
@@ -171,6 +162,13 @@ div{
 .headline--size-medium{
     font-size: 0.875rem;
     line-height: 1.25rem;
+}
+
+.headline--color-primary{
+    color: #737373;
+}
+.headline--color-secondary{
+    color: #FFFFFF;
 }
 /* button block */
 .button{
@@ -181,6 +179,10 @@ div{
     text-align: center;
     letter-spacing: 0.2px;
     padding: 0.625rem 2.25rem;
+    border-width: 0;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0;
     
 }
 .button--primary{
@@ -198,6 +200,9 @@ div{
 }
 .button--border-secondary{
     border-radius: 37px;
+}
+.button--size-secondary{
+    width: 100%;
 }
 /* Product */
 .section-container{
@@ -269,6 +274,8 @@ div{
     flex-direction: column;
     gap:.5rem ;
 }
+.card--team{padding: 0;}
+.card__img--team{width: 100%;}
 .product{
     padding: 5rem 2rem;
     display: flex;
@@ -337,12 +344,9 @@ div{
     text-align: center;
     gap: 3rem;
 }
-.team .card{
-    padding: 0;
-}
-.team .card__img{
-    width: 100%;
-}
+
+
+
 /* contact */
 .contact{
     position: relative;
@@ -366,9 +370,7 @@ div{
     align-items: center;
     gap: 2rem;
 }
-.contact__action .button{
-    width: 100%;
-}
+
 .form{
     display: flex;
     flex-direction: column;
@@ -479,6 +481,16 @@ div{
     outline: none;
     border: #FFA62B;
 }
+.form__group--secondary{
+    height: 100%;
+    margin: 0;
+
+}
+
+.form__input--secondary{
+    height: 100%;
+    padding: 0.925rem 0.5rem;
+}
 /* Footer */
 .footer__up{
     background-color: rgba(37, 43, 66, 1);
@@ -511,6 +523,10 @@ div{
     color: #FFFFFF;
 }
 .footer-list{
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
     margin: 2rem 0 0 0 ;
     display: flex;
     flex-direction: column;
@@ -524,7 +540,7 @@ div{
     letter-spacing: 0.2px;
 }
 .footer-list__link{
-   
+    text-decoration: none;
     color: #BDBDBD;
 }
 .footer-list__link:hover, .footer-list__link:active{
@@ -541,15 +557,11 @@ div{
     align-items: center;
     
 }
-.form__wrapper .form__group{
-    height: 100%;
-    margin: 0;
-}
-.form__wrapper .form__input{
-    height: 100%;
-    padding: 0.925rem 0.5rem;
-}
+
+
 .footer__copyright{
+    margin: 0;
+    padding: 0;
     font-style: normal;
     font-weight: 600;
     font-size: 0.875rem;
@@ -645,7 +657,8 @@ div{
         justify-content: space-between;
         padding: 2rem 6rem;
     }
-    .contact__action .button{
+    
+    .button--size-secondary{
         width: auto;
     }
     .form__row{
