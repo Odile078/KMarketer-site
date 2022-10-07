@@ -236,11 +236,9 @@
 .card__header{
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
-.card__header >* + *{
-    margin: 0 0 0 1rem;
-}
 .card__rating-list{
     display: flex;
     align-items: center;
