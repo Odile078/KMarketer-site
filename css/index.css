@@ -108,10 +108,9 @@
     align-content: center;
     align-items: center;
     text-align: center;
+    gap: 2rem;
 }
-.hero__wrapper> *{
-    margin: 2rem 0 0 0 ;
-}
+
 .hero__action{
     display: flex;
     flex-direction: column;
